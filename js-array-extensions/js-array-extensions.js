@@ -4,7 +4,13 @@ newArr = {};
 
 newArr._value = array;
 
-newArr._first = function(){ 
+_.extend(newArr,arrayMethods)
+return newArr;
+}
+
+arrayMethods{}; 
+
+arrayMethods._first = function(){ 
 	
 	firstele = this._value[0];
 
@@ -15,11 +21,11 @@ newArr._first = function(){
 	return firstele;
 }
 
-newArr._last = function(){ 
+arrayMethods._last = function(){ 
 	
 	return this._value.pop();
 
 } 
 
-return newArr;
-}
+//completed
+

@@ -14,3 +14,6 @@ var Stack = function() {
       }
     };
   };
+
+
+//mostly completed

@@ -10,3 +10,5 @@ the size sure as we need to varaible tracking the first and last element key num
 
 Stack: It follows Last In First Out(LIFO) method dealing with any new element, it has for example methods like push( adding new
 element in he last of stack), pop( return the last element of it), and size(for sizing).
+
+//  completed

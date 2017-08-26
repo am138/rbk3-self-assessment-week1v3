@@ -41,3 +41,6 @@ var hashFn = function(str, max) {
   }
   return hash;
 };
+
+
+//Mostly Completed
