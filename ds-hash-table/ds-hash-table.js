@@ -1,5 +1,6 @@
   var makeHashTable = function() {
     //Do not change the max!
+    //Ok I won't.. 
     var max = 4;
 
       return {
@@ -10,15 +11,15 @@
 
         insert: function(key, value) {
           //your code is here
-
+          var index = hashFn(key, max)
           //check if the bucket is empty
-          if(this._storage[hashFn(key, max)] === undefined){
+          if(this._storage[index] === undefined){
             //if empty, make bucket..
-            this._storage[hashFn(key, max)] = [];
-            this._storage[hashFn(key, max)].push([key, value]);
+            this._storage[index] = [];
+            this._storage[index].push([key, value]);
           }else{
             //if bucket already created, push to it
-            this._storage[hashFn(key, max)].push([key, value]);
+            this._storage[index].push([key, value]);
           } 
       }
     }
