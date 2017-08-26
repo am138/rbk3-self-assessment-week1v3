@@ -1,3 +1,4 @@
+//1:completed
 var Stack = function() {
     this._storage =[]
     this.add = function(value){
