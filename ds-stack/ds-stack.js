@@ -2,11 +2,13 @@ var Stack = function() {
     this._storage = [];
     this.add = function(val){
       // write me
-      _storage.push(val)
+      //will push the value to the storage 
+      this._storage.push(val)
     };
     this.remove = function() {
       // write me
-      _storage.splice(_storage.length-1 ,1)
+      // will remove and return the last value
+      this._storage.splice(this._storage.length-1 ,1)
     };
   };
 
