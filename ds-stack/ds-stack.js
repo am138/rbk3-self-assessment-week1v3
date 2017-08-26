@@ -1,8 +1,11 @@
 var Stack = function() {
-    this._storage = {}
-    this._counter = 0 ;
+	var someInstance=this;
+     this._storage = {};
+     this._counter = 0 ;
+     return someInstance ;
+	
     
-    this.add = function(value){
+   this.add = function(value){
     	this._storage[this._counter++]= value
       
     };
