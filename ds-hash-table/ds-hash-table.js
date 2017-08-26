@@ -10,7 +10,15 @@ var makeHashTable = function() {
 
       insert: function(key, value) {
         //your code is here
+        var index= hashFn(key,max);
         this._storage[hashFn(key, max)] = value;
+        var bucket = this._storage[index];
+        if (bucket) {
+          bucket = [];
+        }
+        else {
+
+        }
     }
   }
 };
