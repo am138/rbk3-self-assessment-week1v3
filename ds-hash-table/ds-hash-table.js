@@ -9,7 +9,7 @@ var makeHashTable = function() {
       },
 
       insert: function(key, value) {
-        //your code is here
+        this._storage.push(value)
         this._storage[hashFn(key, max)] = value;
     }
   }
