@@ -1,11 +1,13 @@
-var array= function (arr) {
-     this.arr=arr;
+var array= function (arrr) {
+     this.arrr=arrr;
+
 	this.first=function()
 	{
-		return this.arr[0];
+		return this.arrr[0];
 	};
+
 	this.last=function()
 	{
-		return this.arr[this.arr.length-1];
+		return this.arrr[this.arrr.length];
 	}
 }
