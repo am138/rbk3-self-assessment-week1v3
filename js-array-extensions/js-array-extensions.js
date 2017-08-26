@@ -4,6 +4,7 @@
  	}
  	return array.slice(0, n);
  }
+ 
 
  function last(array,n){
  	var a= array.length-1
