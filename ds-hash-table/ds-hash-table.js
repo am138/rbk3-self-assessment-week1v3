@@ -10,9 +10,12 @@ var makeHashTable = function() {
 
       insert: function(key, value) {
         //your code is here
+        var index = hashFn(key, max);
+        if(._storage[index].lenght < 4){
         this._storage[hashFn(key, max)] = value;
+        }
+      }
     }
-  }
 };
 
 // This is a "hashing function". You don't need to worry about it, just use it to turn any key into a pseudo-random key
