@@ -11,6 +11,13 @@ var makeHashTable = function() {
       insert: function(key, value) {
         //your code is here
         this._storage[hashFn(key, max)] = value;
+
+        for (var i = 0; i < this._storage.length; i++) {
+            if(this._storage.var === value){
+              this._storage[i-1] = key;
+            }
+        }
+ 
     }
   }
 };
