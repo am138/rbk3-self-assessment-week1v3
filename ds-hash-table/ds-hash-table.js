@@ -9,6 +9,9 @@ var makeHashTable = function() {
       },
 
       insert: function(key, value) {
+        if (this._storage[hashFn(key, max)] !== undefined) {
+          this._storage[hashFn(key, max)] = [this._storage[hashFn(key, max)] , value];
+        }
         //your code is here
         this._storage[hashFn(key, max)] = value;
     }
