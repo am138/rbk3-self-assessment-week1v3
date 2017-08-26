@@ -8,8 +8,9 @@ var Stack = function() {
     };
     this.remove = function() {
     	var re=this._storage[s];
-    	delete this._storage[s]
+    	this._storage.slice(0,this._storage.length-1)
     	s--;
+    	return re;
       // write me
     };
   };
