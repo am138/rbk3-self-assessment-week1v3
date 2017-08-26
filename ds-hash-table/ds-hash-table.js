@@ -16,10 +16,18 @@ var makeHashTable = function() {
         var bucket=[];
         if(!Array.isarray(this._storage[hashFn(key, max)]) ){
           bucket.push(tuple);
-        bucket=this._storage[hashFn(key, max)];
+          this._storage[hashFn(key, max)]=bucket;
         
         }
-       this._storage[hashFn(key, max)].push(tuple);
+        else {
+          for (var i=0;i<this._storage[hashFn(key, max)];i++){
+            if (this._storage[hashFn(key, max)][i][0]===key){
+             this._storage[hashFn(key, max)][i][1] =value;
+            }
+          }
+          this._storage[hashFn(key, max)].push(tuple);
+        }
+       
 
    
   }
