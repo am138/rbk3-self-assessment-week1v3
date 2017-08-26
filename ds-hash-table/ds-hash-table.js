@@ -10,7 +10,23 @@ var makeHashTable = function() {
 
       insert: function(key, value) {
         //your code is here
+        var index = this._storage[hashFn(key, max)];
+        if (!index){
         this._storage[hashFn(key, max)] = value;
+      }else{ 
+        var bucket = this._storage[index]; 
+
+        for (var i = 0; i < bucket.length; i++){
+          var tuple = bucket[i]; 
+          if(tuple){
+            bucke[i+1].push[key,value]; 
+            
+            return; 
+          }
+        }
+
+      }
+
     }
   }
 };
