@@ -1,16 +1,31 @@
+
+// Grade 2:Half complete
 var makeHashTable = function() {
   //Do not change the max!
   var max = 4;
 
     return {
       _storage: [],
+      arr:[],
       retrieve: function(key) {
-        return this._storage[hashFn(key, max)];
+        for(var i=0;i<this._storage[hashFn(key, max)].length;i+=2){
+          if(this._storage[hashFn(key, max)][i]===key)
+            return this._storage[hashFn(key, max)][i]
+        }
       },
 
       insert: function(key, value) {
         //your code is here
-        this._storage[hashFn(key, max)] = value;
+        var index=hashFn(key, max)
+        this.arr.push(key)
+        this.arr.push(value)
+        for (var i=0;i<this._storage[hashFn(key, max)].length;i++){
+          if( this._storage[hashFn(key, max)][i]===undefined){
+            this._storage[hashFn(key, max)][i]=this.arr;
+            return
+          }
+        }  
+        
     }
   }
 };
