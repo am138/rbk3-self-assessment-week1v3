@@ -12,7 +12,7 @@ var Stack = function(value) {
         var x = this._storage[this.end++]
         delete  this._storage[this.end++]
         return x ;
-    };
+    
   };
 
 var newStack = new Stack(value)
