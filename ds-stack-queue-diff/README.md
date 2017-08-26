@@ -17,4 +17,4 @@ Stack :
 it can be an array or an object , the first element enter in it is the last element get out .
 and the last element enter is the first elment get out.
 for example : the bulding has many floor when you enter in it you enter to first floor and second floor . . . .
-			   if you want to go out , first you go out from the last floor you entered .
+			   if you want to go out , first you go out from the last floor you entered . . . . 
