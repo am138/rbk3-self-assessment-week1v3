@@ -15,8 +15,10 @@ var Stack = function() {
       if(this._counter>0)
       {
       	var result =this._storage[this._counter];
-      	    delete this._storage[this._counter];
-      	       this._counter--;
+      	    delete this._storage[this._counter];//delete the storage if counter more than 0 exixst
+      	       this._counter--;//decrease the counter
+      	       return result;//return the result that i deleted
+      	      
 
       }
          
