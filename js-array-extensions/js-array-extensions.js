@@ -1,6 +1,6 @@
 //2:completed
 // your code here
-function Instantiation_Patterns (){
+var Instantiation_Patterns=function (){
 	var instance={};
 	instance.array=[1,2,3];
 	_.extend(instance,methods)
