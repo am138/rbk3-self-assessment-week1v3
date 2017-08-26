@@ -11,7 +11,7 @@ var makeHashTable = function() {
       insert: function(key, value) {
         //your code is here
         var index = hashFn(key, max);
-        if(._storage[index].lenght < 4){
+        if(._storage[index].length < 4){
         this._storage[hashFn(key, max)] = value;
         }
       }
