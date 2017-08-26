@@ -25,3 +25,17 @@ var hashFn = function(str, max) {
   }
   return hash;
 };
+//////
+var hashFn=function(str,max){
+  this.hash=0
+  this.str=[]
+  this.max=0
+
+}
+hashFn.prototype.turn = function() {
+  for(var i=0;i<this.str.length;i++){
+  return this.str[key]
+
+  }
+  // body...
+};
