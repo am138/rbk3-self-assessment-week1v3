@@ -1,9 +1,9 @@
-//2: mostly completed
+//2:completed
 // your code here
 function Instantiation_Patterns (){
 	var instance={};
 	instance.array=[1,2,3];
-	._extend(instance,methods)
+	_.extend(instance,methods)
 	return instance;
 }
 var methods={};
