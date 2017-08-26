@@ -11,6 +11,9 @@ While Stacks work with FILO (first-in-last-out) strategy, so the earlier to add 
 uses for queue: 
 	-to implement things like.. queues! :D
 	-applications where we want to reserve the order of the data
+	-
 uses for stack:
 	-to reverse the order of data, by inserting things to queue and then pop then out one by one (in reverse order)
 	-function calls stack..
+	-all uses boils down to the idea of giving priority for the last added item of data.
+	-like howManyDishesYouHaveToWash app :)

@@ -11,3 +11,5 @@ var Stack = function() {
       return this._storage.pop();
     };
   };
+
+  
