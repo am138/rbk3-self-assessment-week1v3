@@ -25,3 +25,12 @@ var hashFn = function(str, max) {
   }
   return hash;
 };
+
+
+
+///hashtable uses search by dividing the elements in half and go the 
+//side that matches the condoition then does the same thing with other half
+// it reaches the result that needed
+
+
+

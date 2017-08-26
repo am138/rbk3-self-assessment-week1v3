@@ -1,9 +1,20 @@
 var Stack = function() {
-    this._storage =
+    this._storage = {}
+    var counter=0
+
     this.add = function(){
-      // write me
+      stack.push;
+      
     };
     this.remove = function() {
-      // write me
+      stack.pop;
+      if(counter === -1 ){
+    counter=0
+    }
+  return counter;
+  var key = storage["counter"];
+    delete (storage["counter"])
+      counter--;
+      return key;
     };
   };
